@@ -1,13 +1,8 @@
-import operator
-items = [
-    ("ITEM 1", 1.25),
-    ("ITEM 2", 0.75),
-    ("ITEM 3", 1.0),
-    ("ITEM 4", 2.5),
-    ("ITEM 5", 3.0)
+shares_held = [
+    ("SHARE 1", 150.50, 100, 175.25),  
+    ("SHARE 2", 2500.75, 50, 2600.50),
+    ("SHARE 3", 300.25, 75, 320.00),
+    ("SHARE 4", 3500.50, 30, 3800.75),
+    ("SHARE 5", 700.00, 20, 750.00)
 ]
-
-sorted_items = sorted(items, key=operator.itemgetter(1), reverse=True)
-
-for item in sorted_items:
-    print(item)
+print(shares_held)
